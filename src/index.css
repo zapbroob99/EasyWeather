@@ -1,0 +1,158 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #535bf2;
+  background-color: #f0f0f0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #535bf2;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  cursor: default;
+}
+p{
+  color: black;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #535bf2;
+
+}
+button:focus,
+button:focus-visible {
+
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+
+    background-color: #ffffff;
+  }
+  a:hover {
+    color:  #535bf2;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: space-between; /* Distribute items to the ends */
+  align-items: center; /* Center items vertically */
+  border: 1px solid;
+  border-radius: 25px;
+  text-align: left;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.current-conditions p {
+  display: inline-block;
+  margin: 0.8em;
+}
+
+.current-conditions p{
+  font-size: 1.5em;
+}
+input {
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.3em;
+  text-align: left;
+  margin-left: 1em;
+  flex: 1; /* Take up remaining space */
+}
+
+
+/* src/components/WeatherCard.css */
+.daily-forecast {
+  color: black;
+  text-align: center;
+  margin-top: 20px; /* Example: Adding some top margin */
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Example: Adding padding for spacing */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+
+}
+
+
+.daily-forecast table {
+  border-collapse: separate;
+  border-spacing: 5px;
+  border: 1px solid black;
+  border-radius: 10px; /* Adjust the radius as needed */
+
+}
+
+/* Define the keyframes for the hover animation */
+@keyframes hoverAnimation {
+  0% {
+
+    background-color: #f0f0f0;
+  }
+  50% {
+
+    background-color: #e0e0e0;
+  }
+  100% {
+
+    background-color: #f0f0f0;
+  }
+}
+
+/* Apply the hover animation to the daily forecast items */
+.daily-forecast table:hover {
+
+}
+
+.daily-forecast table td:hover {
+  animation: hoverAnimation 0.5s ease-in-out;
+}
+
+.daily-forecast table th:hover {
+  animation: hoverAnimation 0.5s ease-in-out;
+}
+
+
+
+.daily-forecast  h3{
+  color: #535bf2;
+}
